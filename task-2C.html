@@ -49,20 +49,43 @@
         </tr>
     </table>
     <h3>Some random form</h3>
-    <form>
+    <form name="form" onsubmit="return validateForm()" method=""post">
         <p><b>Note: </b>It looks the part, but won't do anything.</p>
         <p>Name:</p>
-        <input placeholder="Your name">
+        <input type="text" name="name" placeholder="Your name">
         <p>Comments:</p>
-        <textarea rows ="10" cols="25px" style="overflow-y:scroll; resize:none;">Your comments </textarea>
+        <textarea type ="text" name= "comment" rows ="10" cols="25px" style="overflow-y:scroll; resize:none;">Your comments </textarea>
         <p>Are you:</p>
-        <input type="radio"> 
+        <input type="radio" name="gender" value="male"> 
         <label>Male</label><br>
-        <input type="radio"> 
+        <input type="radio" name="gender" value="female"> 
         <label>Female</label><br>
         <br>
-        <button> Submit Query</button>    
+        <input type="submit" value="Submit Query">    
     </form>
-
+    <script>
+     function validateForm(){
+        var name = document.form.name;
+        var comment = document.form.comment;
+        var gender = document.form.gender;
+        if (name.value.length <=0){
+            alert("Name should not be empty");
+            return false;
+        }
+        if (comment.value.length <=0){
+            alert("Comment should not be empty");
+            return false;
+        }
+        if (gender.value.length <= 0) {    
+            alert("Gender is required");    
+            gender.focus();    
+            return false;
+        } 
+        if(name.value.length<=0 || comment.value.length<=0 || gender.value.length<=0){
+            alert("All fields are compulsory");
+            return false;
+        }
+     }
+    </script>
 
 </body>
