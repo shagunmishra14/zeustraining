@@ -70,14 +70,19 @@
         var gender = document.form.gender;
         if (name.value.length <=0){
             alert("Name should not be empty");
+            alert("All fields are compulsory");
+            name.focus();
             return false;
         }
         if (comment.value.length <=0){
             alert("Comment should not be empty");
+            alert("All fields are compulsory");
+            comment.focus();
             return false;
         }
         if (gender.value.length <= 0) {    
-            alert("Gender is required");    
+            alert("Gender is required"); 
+            alert("All fields are compulsory");
             gender.focus();    
             return false;
         } 
