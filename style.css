@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(252, 252, 207);
+    margin: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1{
+    background-color: rgb(156, 11, 11);
+    color: #fff;
+    text-align:center;
+    letter-spacing: 10px;
+    font-style: italic;
+    font-size: 25px;
+    padding: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(221, 2, 2);
+    border-width: 15px;
+}
+h2{
+    background-color:rgb(4, 160, 4);
+    padding: 3px 0px 2px 12px;
+    color:white;
+    font-size: 20px;
+}
+.about b{
+    text-transform: uppercase;
+    font-style:italic;
+    font-weight:bolder;
+}
+.more{
+    color:rgb(189, 22, 22);
+    font-style:italic;
+    font-weight: 500;
+}
+a:link{
+    text-decoration: none;
+}
+img{
+    padding:20px;
+    background-color: white;
+    border-style: dashed;
+    border-color: rgb(189, 188, 188);
+    margin-bottom:10px;
+    border-width: 2px;
+}
+h3{
+    color:rgb(129, 129, 129);
+}
+table{
+    background-color:rgb(189, 188, 188);
+}
+form b{
+    text-transform: uppercase;
+    font-style: italic;
+}
+
